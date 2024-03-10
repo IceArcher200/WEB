@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> </script>
+
+<style>
+    .sample-slider{
+        width:95%;
+    }
+    .sample-slider img{
+        width: 100%;
+    }
+</style>
+
+
+<html>
+    <head>
+        <title>
+            Slider
+        </title>
+    </head>
+    <body>
+        <div class="swiper sample-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/lake_1.jpeg"></div>
+                <div class="swiper-slide"><img src="img/lake_2.jpeg"></div>
+                <div class="swiper-slide"><img src="img/lake_3.jpeg"></div>
+            </div>
+            <div class="swiper-button-prev"></div>  
+            <div class="swiper-button-next"></div>  
+            <div class="swiper-pagination"></div>
+        </div>
+    </body>
+</html>
+
+<script>
+    const swiper = new Swiper('.sample-slider', {
+        loop:true,
+        navigation: {                          
+        nextEl: ".swiper-button-next",      
+        prevEl: ".swiper-button-prev",      
+        }, 
+        pagination: {                       
+            el: '.swiper-pagination',
+        },
+    });
+</script>
+
