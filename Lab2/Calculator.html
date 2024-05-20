@@ -9,19 +9,25 @@
     </head>
 
     <body>
-        <select id = "type" class="form-select-sm" aria-label=".form-select-sm example" onchange="changeComboBox()">
-            <option selected id="-1">Выберите тип вклада</option>
-            <option value="1">Пополняемый</option>
-            <option value="2">Срочный</option>
-        </select>
-        <select id = "first"class="form-select-sm" disabled="true" >
-        </select>
-          <input id="amount" type="number" class="form-select-sm" placeholder="Вносимая сумма" aria-label="Вносимая сумма">
-          <button type = "button" class = "btn btn-primary" onclick="calculate()">
-            Рассчитать
-          </button>
-      <div class="col-4">
-        <output id="resultBox" type="text" readonly class="form-control-plaintext border">
+      <div class="container">
+        <div class="row">
+          <div class = "col-sm-4">
+            <select id = "type" class="form-select mb-3" aria-label=".form-select-sm example" onchange="changeComboBox()">
+                <option selected id="-1">Выберите тип вклада</option>
+                <option value="1">Пополняемый</option>
+                <option value="2">Срочный</option>
+            </select>
+            <select id = "first"class="form-select mb-3" disabled="true" >
+            </select>
+              <input id="amount" type="number" class="form-control mb-3" placeholder="Вносимая сумма" aria-label="Вносимая сумма">
+              <button type = "button" class = "btn btn-primary" onclick="calculate()">
+                Рассчитать
+              </button>
+          </div>
+          <div class="col-4">
+            <output id="resultBox" type="text" readonly class="form-control-plaintext border">
+          </div>
+        </div>
       </div>
     </body>
 

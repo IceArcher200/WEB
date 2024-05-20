@@ -1,10 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
 
 module.exports = {
     entry: './Slider.html',
-    
+    mode: 'development',
     module: {
         rules: [
         {
@@ -27,8 +26,8 @@ module.exports = {
     }),
 ],
     output: {
-        path: path.resolve(__dirname, 'webpack-slider'),
-        filename: 'webpack-slider.js'
+        path: path.resolve(__dirname, 'webpackSlider'),
+        filename: 'webpackSlider.js'
     }
     
 };
